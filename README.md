@@ -7,5 +7,6 @@ All materials for student's to pull each day when they arrive in class
 3. Create a folder where you will do your work with 'mkdir -p ~/my_work'
 
 # Student Daily Workflow
-1. Change directory in terminal to materials directory 'cd materials/'
-2. Grab most recent changes with 'git pull'
+Change directory in terminal to materials directory 'cd materials/'
+Grab most recent changes with 'git pull' then 'cd ..' to go back to a scope where you can see both directories.
+Copy specific file or directory to your work folder with 'cp materials/specific_file_or_folder my_work'
