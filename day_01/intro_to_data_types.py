@@ -1,14 +1,14 @@
 # This is an introductory assignment to help you get on your feet with variables and print statements.
 
 # This variable's data type is a string
-full_name = "Kevin Santos"
+full_name = "Henry Bracke"
 # These are both integer variables
-year_of_graduation = 2014
-years_at_nmh = 2
+year_of_graduation = 2026
+years_at_nmh = 3
 # This is an example of a list with 3 string values
-hobbies = ["Soccer", "Snowboarding", "Hiking"]
+hobbies = ["Robotics", "Snowboarding", "Baking"]
 # Enter your
-favorite_foods = ["apples", "sandwiches", "broccoli"]
+favorite_foods = ["Pineapple", "Steak", "Sushi"]
 
 # F String print statements are very versatile. Feel free to use regular print statements as well.
 print(f"Hello, my name is {full_name}.")
