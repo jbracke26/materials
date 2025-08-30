@@ -10,6 +10,8 @@ hobbies = ["Soccer", "Snowboarding", "Hiking"]
 # Enter your
 favorite_foods = ["apples", "sandwiches", "broccoli"]
 
+print("I have been at NMH for " + years_at_nmh + "years")
+
 # F String print statements are very versatile. Feel free to use regular print statements as well.
 print(f"Hello, my name is {full_name}.")
 print(f"I am in the class of {year_of_graduation} and I have been at NMH for {years_at_nmh} years.")
