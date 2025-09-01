@@ -71,7 +71,7 @@ me = {
 # TODO: Make a dictionary with at least 3 pieces of information about yourself.
 
 
-# Access values using keys:
+# Access values using keys by using the .get() method rather than indexing
 # print(f"My name is {me['name']}")
 # print(f"My age is {me['age']}")
 # print(f"My favorite color is {me['favorite_color']}")
@@ -79,7 +79,7 @@ me = {
 # Bug Exploration:
 # Try printing a key that doesn’t exist.
 # print(me["hometown"])
-# Q: What kind of error is this? How could you check if a key exists before using it?
+# Q: What kind of error is this? How could you check if a key exists before using it? Why is the .get() method useful here?
 
 
 # --- Section 5: Changing a Dictionary ---
@@ -106,10 +106,10 @@ me = {
 
 # Bug Exploration:
 # What happens if you loop over just the dictionary without calling .items()?
-# for thing in me:
-#     print(thing)
+# for key in me:
+#     print(key)
 
-# Q: Why does it only print the keys?
+# Q: Why does it only print the keys? How can you change your for loop to print key and value pairs?
 
 
 # --- Section 7: Mixing Lists and Dictionaries ---
