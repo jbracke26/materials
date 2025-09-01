@@ -1,4 +1,5 @@
 Week 01 Lab : Standard Level
+Due Date: Sunday 9/7 @ midnight
 
     Objective: Utilize basic python data types, loops, conditionals, and user data in small program according
                to a set of criteria below.
@@ -30,6 +31,7 @@ Week 01 Lab : Standard Level
             
 
 Week 01 Lab : Advanced Level
+Due Date: Sunday 9/7 @ midnight
 
     Objective: Build an interactive program that practices input/output, conditionals, data structures, and introduces a new
                tool/library (GUI or formatted output). The program should take user information and present it in a polished, 
@@ -53,7 +55,7 @@ Week 01 Lab : Advanced Level
             sorted list, or with flags/emojis if using rich).
         3. If not multilingual, ask for a desired language and display a “learning plan” (could just be a fun random tip or suggested practice hours generated in code).
 
-    - Bonus Challenge (optional but encouraged):
+    - Bonus Challenges (optional but encouraged):
         1. Write user data to a JSON file so that the program “remembers” users between runs.
         2. Translate a greeting into one of the listed languages using a library like googletrans.
         3. Use datetime to estimate what year the user can vote, rent a car, or retire.
