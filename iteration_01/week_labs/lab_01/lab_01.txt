@@ -1,4 +1,4 @@
-Week 01 Lab : For Beginners:
+Week 01 Lab : Standard Level
 
     Objective: Utilize basic python data types, loops, conditionals, and user data in small program according
                to a set of criteria below.
@@ -29,7 +29,7 @@ Week 01 Lab : For Beginners:
 
             
 
-Week 01 Lab : Advanced Students:
+Week 01 Lab : Advanced Level
 
     Objective: Build an interactive program that practices input/output, conditionals, data structures, and introduces a new
                tool/library (GUI or formatted output). The program should take user information and present it in a polished, 
