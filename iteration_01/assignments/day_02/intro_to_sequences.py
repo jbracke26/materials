@@ -12,16 +12,16 @@ Your job is to experiment, fill in blanks, and notice how lists and dictionaries
 
 # TODO: Create a list of 5 of your favorite foods.
 
-foods = []
+foods = ["pizza", "sushi", "noodles", "steak", "water"]
 
 # Access items by index (first = 0):
-print(f"The first food is {foods[0]}")
-print(f"The last food is {foods[-1]}")
+#print(f"The first food is {foods[0]}")
+#print(f"The last food is {foods[-1]}")
 
 # Bug Exploration:
 # Try printing foods[100] below.
 # Q: What error do you get, and what does it mean?
-
+# print(f"the 100ths food is {foods[100]}")
 
 
 # --- Section 2: Changing a List ---
@@ -29,52 +29,62 @@ print(f"The last food is {foods[-1]}")
 # Lists can grow and shrink using built-in methods.
 
 # TODO: Add a new food to the end of your list with .append()
-
+#foods.append("chocolate")
 
 # TODO: Insert a food at the beginning with .insert()
-
+#foods.insert(0, "strawberry")
 
 # TODO: Remove one food from the list with .remove()
-
+#foods.remove("noodles")
 
 # TODO: How many foods are in the list? Use len()
-
+#length = len(foods)
+#print(f"There are {length} foods in the list.")
 
 # Bug Exploration:
 # Try removing something that isn’t in the list:
 # foods.remove("chocolate")
 # Q: What happens? Why?
-
+# error bro
+# foods.remove("apple")
 
 # --- Section 3: Loops with Lists ---
 
 # TODO: Write a for loop that prints each food in your list one by one.
-
+#for i in range(len(foods)):
+    #print(f"Index {i} → {foods[i]}")
 
 # Bug Exploration:
 # Change your loop to go past the length of the list:
-for i in range(______):
-    print(f"Index {i} → {foods[i]}")
+#for i in range(1,10):
+    #print(f"Index {i} → {foods[i]}")
 # Q: Why does this cause an error?
-
+#yeah obv
 
 # --- Section 4: Dictionaries (Key–Value Pairs) ---
 
 # Dictionaries let us label data with keys.
 # Example: 
-me = {
-    "name": "Kevin",
-    "age": 30,
-    "student": False
-    }
+#me = {
+   # "name": "Kevin",
+    #"age": 30,
+    #"student": False
+    #}
 
 # TODO: Make a dictionary with at least 3 pieces of information about yourself.
-
+school = {
+    "name": "NMH",
+    "location": "Mass",
+    "food rating": "mid",
+}
 
 # Access values using keys by using the .get() method rather than indexing
 # print(f"My name is {me['name']}")
 # print(f"My age is {me['age']}")
 # print(f"My favorite color is {me['favorite_color']}")
+#print(f"My school is {school['name']}")
+#print(f"My school is located in {school['location']}")
+#print(f"My school's food rating is {school['food rating']}")
 
 # Bug Exploration:
 # Try printing a key that doesn’t exist.
@@ -85,30 +95,34 @@ me = {
 # --- Section 5: Changing a Dictionary ---
 
 # TODO: Add a new key-value pair.
-
-
+school["grades"] = "9-12"
+#print(school["grades"])
 # TODO: Change the value of an existing key.
-
+school["location"] = "Massachusetts"
+#print(school["location"])
 
 # TODO: Remove one key-value pair.
-
+#school.pop("grades")
+#print(school["grades"])
 
 # Bug Exploration:
 # Try removing a key that doesn’t exist:
 # me.pop("grade")
 # Q: What happens? Is this similar to removing from a list?
-
+# school.pop("population")
 
 # --- Section 6: Loops with Dictionaries ---
 
 # TODO: Write a loop that prints both the keys and values in your dictionary using .items()
-
+#for key, value in school.items():
+    #print(f"{key} → {value}")
 
 # Bug Exploration:
 # What happens if you loop over just the dictionary without calling .items()?
 # for key in me:
 #     print(key)
-
+#for key in school:
+    #print(key)
 # Q: Why does it only print the keys? How can you change your for loop to print key and value pairs?
 
 
@@ -116,13 +130,19 @@ me = {
 
 # TODO: Create a list of dictionaries. 
 # Example: a list of 3 friends, where each friend has a name and favorite food.
+friends = [
+    {"name": "Shun", "favorite_food": "sushi"},
+    {"name": "Ethan", "favorite_food": "tomato"},
+    {"name": "Eben", "favorite_food": "steak"}
 
+]
 
 # TODO: Print the favorite food of the second friend.
-
+#print(friends[1]["favorite_food"])
 
 # TODO: Loop through and print "<name> likes <food>" for each friend.
-
+for friend in friends:
+    print(f"{friend['name']} likes {friend['favorite_food']}")
 
 # Bug Exploration:
 # What happens if you try to access friend["hobby"] when "hobby" doesn’t exist in the dictionary?
