@@ -24,3 +24,9 @@ All materials for student's to pull each day when they arrive in class
 3. For documentation on cmath package, go to https://docs.python.org/3/library/cmath.html
 3. For documentation on complex() function, go to https://docs.python.org/3/library/functions.html#complex
 3. For documentation on git, go to https://git-scm.com/docs
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# Best Practices 
+
+1. Modular Programming (https://best-practice-and-impact.github.io/qa-of-code-guidance/modular_code.html)
