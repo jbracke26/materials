@@ -95,34 +95,3 @@ class Triangle:
         """
         print(f"Triangle {self.base} by {self.height} has area {self.area()}")
 
-class Square:
-    """
-    A square shape defined by width and height.
-
-    Attributes:
-        width (int): how wide the square is
-        height (int): how tall the square is
-    """
-
-    def __init__(self, width: int, height: int):
-        self.width = width
-        self.height = height
-
-    def area(self) -> int:
-        """
-        Compute the area of this square.
-
-        Returns:
-            int: the area (width * height)
-        """
-        return self.width * self.height
-
-    def describe(self) -> None:
-        """
-        Print a description of the square.
-
-        Returns:
-            None
-        """
-        print(f"Square {self.width} by {self.height} has area {self.area()}")
-
