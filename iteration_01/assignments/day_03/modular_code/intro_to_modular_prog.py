@@ -10,17 +10,17 @@
 # Imagine you are asked to calculate the area of rectangles with different sides.
 
 # First attempt: copy-paste code for each rectangle.
-width1 = 5
-height1 = 10
-print(f"Rectangle 1 area: {width1 + height1}")
+#width1 = 5
+#height1 = 10
+#print(f"Rectangle 1 area: {width1 + height1}")
 
-width2 = 3
-height2 = 7
-print(f"Rectangle 2 area: {width2 + height2}")
+#width2 = 3
+#height2 = 7
+#print(f"Rectangle 2 area: {width2 + height2}")
 
-width3 = 9
-height3 = 2
-print(f"Rectangle 3 area: {width3 + height3}")
+#width3 = 9
+#height3 = 2
+#print(f"Rectangle 3 area: {width3 + height3}")
 
 # Problem: What if you realize you wrote the wrong formula?
 # You’d have to go fix it in EVERY place.
@@ -53,6 +53,20 @@ print(f"Rectangle 2 area: {area_of_rectangle(3, 7)}")
 print(f"Rectangle 3 area: {area_of_rectangle(9, 2)}")
 
 # Challenge: Add a new function area_of_circle(radius) with proper docstring.
+dospi = 3.14159*2
+def area_of_circle(radius: int, dospi: int) -> int:
+    """
+    Calculate the area of a circle.
+
+    Parameters:
+        radius (int): how wide the circle is
+        dospi (int): pi
+
+    Returns:
+        int: the area of the circle (radius * radius * pi)
+    """
+    return radius * radius * dospi
+print(f"Circle 1 area: {area_of_circle(5, dospi)}")
 
 
 # Example function WITHOUT a return value
