@@ -8,7 +8,7 @@
   2. What roles might you be interested in taking? (e.g., API developer, frontend, data manager, presenter, collecting data)
   - Ideas
     - NMH Community Trivia Application
-    - Personalized Survery Application
+    - Personalized Survey Application
     - Some interactive game
   - Submission
     - Canvas text submission
