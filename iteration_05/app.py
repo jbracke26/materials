@@ -1,5 +1,4 @@
-from flask import Flask, render_template, request
-import jinja2
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -9,10 +8,15 @@ def home():
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html", email=" ")
+    contact_info = {
+        "email": "jbracke26@nmhschool.org",
+        "github": "github.com/jbracke26",
+        "phone": None 
+    }
+    return render_template("contact.html", contact_info=contact_info)
 
 @app.route("/about")
 def about():
-    return render_template("about.html", author=" ")
+    return render_template("about.html", author="Henry Bracke")
 
 app.run(debug=True)

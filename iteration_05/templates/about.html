@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+<h2>About Me</h2>
+<p>I am Henry, a student in advanced topics in computer science who is interested in engineering, mathematics, and performance software.</p>
+<p>I am interested in technology because I feel thatit can help humanity but maybe isnt doing so currently.</p>
+
+{% if author %}
+<p>By: {{ author }}</p>
+{% else %}
+<p>info not available</p>
+{% endif %}
+{% endblock %}
