@@ -1,24 +1,106 @@
 <!DOCTYPE html>
-<html>
-<!-- Head tag contains metadata. Things that we don't see in the program like CSS links, Javascript imports if needed-->
+<html lang="en">
 <head>
-    <!-- Title tag determines what ends up in browser tab -->
-    <!-- Since we want different pages, to have different titles, we use a jinja2 block -->
-    <!-- This means that templates which extend this one can replace the content of the title block with their own title.-->
-    <title> {% block title %}Flask UI{% endblock %} </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Flask Site{% endblock %}</title>
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+
+        nav {
+            background: white;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+
+        .brand-color { color: #2563eb; }
+        
+
+        h1 { font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; }
+        h2 { font-size: 2rem; font-weight: bold; margin-bottom: 0.8rem; }
+        h3 { font-size: 1.5rem; font-weight: bold; margin-bottom: 0.6rem; }
+        p { font-size: 1rem; margin-bottom: 1rem; }
+        
+ 
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #021c66;
+            text-decoration: underline;
+        }
+        
+        .btn {
+            background: #2563eb;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: #021c66;
+        }
+        
+        /* Content sections with consistent spacing */
+        .content-section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
-
-<!-- Body tag opens the main visible part of the webpage. Everything shown in the browser window lives inside here.-->
 <body>
-    <!-- Navigation bar because I want all my pages to have the ability to navigate between other routes -->
-    <nav>
-        <a href="/">Home</a> |
-        <a href="/contact">Contact</a> |
-        <a href="/about">About</a>
-    </nav>
-    <hr> <!-- This creates a horizontal line -->
-
-    <!-- This is where child templates will insert content -->
-    {% block content %}{% endblock %}
+    <div class="container">
+        <nav>
+            <div class="nav-flex">
+                <h1 class="brand-color">My Site</h1>
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    </div>
 </body>
 </html>

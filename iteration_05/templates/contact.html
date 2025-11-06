@@ -1,15 +1,36 @@
 {% extends 'base.html' %}
 {% block title %}Contact{% endblock %}
 {% block content %}
-<h2>Contact Information</h2>
-<ul>
-    <li>Email: {{ contact_info.email }}</li>
-    <li>GitHub: {{ contact_info.github }}</li>
-</ul>
 
-{% if contact_info.phone %} 
-<p>Phone: {{ contact_info.phone }}</p>
-{% else %}
-<p>Phone number not available.</p>
-{% endif %}
+<div class="content-section">
+    <h2>Contact Information</h2>
+    
+
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <div>
+            <h3>Email</h3>
+            <p><a href="mailto:{{ contact_info.email }}">{{ contact_info.email }}</a></p>
+        </div>
+        
+        <div>
+            <h3>GitHub</h3>
+            <p><a href="https://{{ contact_info.github }}" target="_blank">{{ contact_info.github }}</a></p>
+        </div>
+        
+        <div>
+            <h3>Phone</h3>
+            {% if contact_info.phone %}
+                <p><a href="tel:{{ contact_info.phone }}">{{ contact_info.phone }}</a></p>
+            {% else %}
+                <p>Phone number not available</p>
+            {% endif %}
+        </div>
+    </div>
+    
+    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+        <a href="mailto:{{ contact_info.email }}" class="btn">Send Email</a>
+        <a href="https://{{ contact_info.github }}" target="_blank" class="btn">View GitHub</a>
+    </div>
+</div>
+
 {% endblock %}

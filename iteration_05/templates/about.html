@@ -1,13 +1,34 @@
 {% extends 'base.html' %}
 {% block title %}About{% endblock %}
 {% block content %}
-<h2>About Me</h2>
-<p>I am Henry, a student in advanced topics in computer science who is interested in engineering, mathematics, and performance software.</p>
-<p>I am interested in technology because I feel thatit can help humanity but maybe isnt doing so currently.</p>
 
-{% if author %}
-<p>By: {{ author }}</p>
-{% else %}
-<p>info not available</p>
-{% endif %}
+<div class="content-section">
+    <h2>About Me</h2>
+    
+    <!-- Flexbox layout for two-column design -->
+    <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <h3>Background</h3>
+            <p>I am {{ author }}, a student in advanced topics in computer science who is interested in engineering, mathematics, and performance software.</p>
+            
+            <h3>Interests</h3>
+            <p>I am interested in technology because I feel that it can help humanity but maybe isn't doing so currently.</p>
+        </div>
+        
+        <div style="flex: 1; min-width: 250px;">
+            <h3>Quick Facts</h3>
+            <ul>
+                <li>Computer Science Student</li>
+                <li>Engineering Enthusiast</li>
+                <li>Mathematics Interest</li>
+                <li>Performance Software Focus</li>
+            </ul>
+            
+            {% if author %}
+                <p><strong>Author:</strong> {{ author }}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
 {% endblock %}
